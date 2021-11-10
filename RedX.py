@@ -41,7 +41,7 @@ def run():
             for x in range(times):
                 s.sendto(data,addr)
             print(i +" RedX Menyenggol ")
-       except:
+        except:
            print(" [!] RedX IS HERE DUDE! ")
 
 def run2():
@@ -55,7 +55,7 @@ def run2():
             for x in range(times):
                 s.send(data)
             print(i +" RedX Menyenggol ")
-       except:
+        except:
            s.close()
            print("[*] RedX IS HERE DUDE ")
 
