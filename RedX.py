@@ -24,7 +24,7 @@ print("╚═╝░░╚═╝╚══════╝╚═════╝╚�
 
 print("------------------------------------------------------------")
 print("      >Jangan Abuse Ya Maniez<         ")
-print("               >Tools By RedX<                     ")
+print("          >Tools By RedX<              ")
 print("------------------------------------------------------------")
 ip = str(input("DdosAttackByRedX | ip: "))
 port = int(input("DdosAttackByRedX | port: "))
