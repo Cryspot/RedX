@@ -54,7 +54,7 @@ def run2():
                         s.send(data)
                         for x in range(times):
                                 s.send(data)
-                        print(\033[92m [!] RedX Menyenggol ")
+                        print("\033[92m [!] RedX Menyenggol ")
                 except:
                         s.close()
                         print("\033[92m [*] RedX IS HERE DUDE ")
