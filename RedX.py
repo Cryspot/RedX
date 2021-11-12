@@ -63,7 +63,7 @@ for y in range(threads):
         if choice == 'y':
                 th = threading.Thread(target = run)
                 th.start()
-        else:
+        if choice == 'y':
                 th = threading.Thread(target = run2)
                 th.start()
         
