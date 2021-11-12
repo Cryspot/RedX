@@ -62,9 +62,8 @@ def run2():
 for y in range(threads):
         if choice == 'y':
                 th = threading.Thread(target = run)
-                th.start()
-        else:
                 th = threading.Thread(target = run2)
                 th.start()
-else :
+        
+else:
     print("Password Salah Woe")
