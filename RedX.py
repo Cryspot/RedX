@@ -8,15 +8,19 @@ import os
 os.system("clear")
 print("\033[93m")
 Password = input("PASSWORD: ")
-if Password=="RedX":
-print(f"""Password yang anda masukan Benar !! """)
 
-print("██████╗░███████╗██████ ╗██╗░░██╗")
-print("██╔══██╗██╔════╝██╔══██╗╚██╗██╔╝")
-print("██████╔╝█████╗░░██║░░██║░╚███╔╝")
-print("██╔══██╗██╔══╝░░██║░░██║░██╔██╗")
-print("██║░░██║███████╗██████╔╝██╔╝╚██╗")
-print("╚═╝░░╚═╝╚══════╝╚═════╝╚═╝░░╚═╝")
+if Password=="RedX":
+    print(f"""
+Password yang anda masukan Benar !! 
+    """)
+    print('''\033[94mTools By RedX
+██████╗░███████╗██████ ╗██╗░░██╗
+██╔══██╗██╔════╝██╔══██╗╚██╗██╔╝
+██████╔╝█████╗░░██║░░██║░╚███╔╝
+██╔══██╗██╔══╝░░██║░░██║░██╔██╗
+██║░░██║███████╗██████╔╝██╔╝╚██╗
+╚═╝░░╚═╝╚══════╝╚═════╝╚═╝░░╚═╝
+''')
 
 
 
@@ -71,3 +75,5 @@ for y in range(threads):
         else:
                 th = threading.Thread(target = run2)
                 th.start()
+else :
+    print("Password Salah Woe")
