@@ -10,8 +10,10 @@ print("\033[93m")
 Password = input("PASSWORD:")
 
 if Password=="RedX":
-     
-print('''\033[94m      Tools By RedX
+    print(f"""
+Passwordnya bener woy inget jan abuse!!
+    """)
+    print('''\033[94m  Tools By RedX
 ██████╗░███████╗██████ ╗██╗░░██╗
 ██╔══██╗██╔════╝██╔══██╗╚██╗██╔╝
 ██████╔╝█████╗░░██║░░██║░╚███╔╝
